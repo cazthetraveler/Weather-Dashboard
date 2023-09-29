@@ -9,3 +9,14 @@
 // WHEN I click on a city in the search history
 // THEN I am again presented with current and future conditions for that city
 
+var currentDay = dayjs().format("(MM/DD/YYYY)");
+
+var cityInput = $("#city-input");
+
+var searchBtn = $("#search-button");
+
+var searchHistory = $("#search-history");
+var displayResult = $("#display-result");
+
+
+var savedCities = []; //for local storage eventually
