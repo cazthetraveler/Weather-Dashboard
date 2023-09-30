@@ -11,6 +11,10 @@
 
 var currentDay = dayjs().format("(MM/DD/YYYY)");
 var tomorrowDay = dayjs().add(1, "day").format("MM/DD/YYYY");
+var dayPlus2 = dayjs().add(2, "day").format("MM/DD/YYYY");
+var dayPlus3 = dayjs().add(3, "day").format("MM/DD/YYYY");
+var dayPlus4 = dayjs().add(4, "day").format("MM/DD/YYYY");
+var dayPlus5 = dayjs().add(5, "day").format("MM/DD/YYYY");
 
 var cityInput = $("#city-input");
 
@@ -104,5 +108,142 @@ searchBtn.click (function() {
         laterTempEl.text("Temp: " + laterDegreeConvert + "°F");
         laterWindEl.text("Wind: " + laterWind + " MPH");
         laterHumidityEl.text("Humidity: " + laterHumidity + "%");
+
+        //day2
+
+        laterDateEl = $("#day-2 #later-date");
+        laterIconEl = $("#day-2 #later-icon");
+        laterTempEl = $("#day-2 #later-temp");
+        laterWindEl = $("#day-2 #later-wind");
+        laterHumidityEl = $("#day-2 #later-humidity");
+
+        laterWeather = data.list[2].weather[0].main;
+        laterDegree = (data.list[2].main.temp - 273.15) * 1.8 + 32;
+        laterDegreeConvert = (Math.round(laterDegree * 100) / 100).toFixed(2);
+        laterWind = data.list[2].wind.speed;
+        laterHumidity = data.list[2].main.humidity;
+
+        if (laterWeather == "Thunderstorm") {
+            weatherIcon = "🌩";
+        } else if (laterWeather == "Drizzle") {
+            weatherIcon = "🌧"
+        } else if (laterWeather == "Rain") {
+            weatherIcon = "⛆"
+        } else if (laterWeather == "Snow") {
+            weatherIcon = "🌨"
+        } else if (laterWeather == "Clear") {
+            weatherIcon = "🌣"
+        } else if (laterWeather == "Clouds") {
+            weatherIcon = "🌤"
+        };
+
+        laterDateEl.text(dayPlus2);
+        laterIconEl.text(weatherIcon);
+        laterTempEl.text("Temp: " + laterDegreeConvert + "°F");
+        laterWindEl.text("Wind: " + laterWind + " MPH");
+        laterHumidityEl.text("Humidity: " + laterHumidity + "%");
+        
+        //day3
+
+        laterDateEl = $("#day-3 #later-date");
+        laterIconEl = $("#day-3 #later-icon");
+        laterTempEl = $("#day-3 #later-temp");
+        laterWindEl = $("#day-3 #later-wind");
+        laterHumidityEl = $("#day-3 #later-humidity");
+
+        laterWeather = data.list[3].weather[0].main;
+        laterDegree = (data.list[3].main.temp - 273.15) * 1.8 + 32;
+        laterDegreeConvert = (Math.round(laterDegree * 100) / 100).toFixed(2);
+        laterWind = data.list[3].wind.speed;
+        laterHumidity = data.list[3].main.humidity;
+
+        if (laterWeather == "Thunderstorm") {
+            weatherIcon = "🌩";
+        } else if (laterWeather == "Drizzle") {
+            weatherIcon = "🌧"
+        } else if (laterWeather == "Rain") {
+            weatherIcon = "⛆"
+        } else if (laterWeather == "Snow") {
+            weatherIcon = "🌨"
+        } else if (laterWeather == "Clear") {
+            weatherIcon = "🌣"
+        } else if (laterWeather == "Clouds") {
+            weatherIcon = "🌤"
+        };
+
+        laterDateEl.text(dayPlus3);
+        laterIconEl.text(weatherIcon);
+        laterTempEl.text("Temp: " + laterDegreeConvert + "°F");
+        laterWindEl.text("Wind: " + laterWind + " MPH");
+        laterHumidityEl.text("Humidity: " + laterHumidity + "%");
+
+        //day4
+
+        laterDateEl = $("#day-4 #later-date");
+        laterIconEl = $("#day-4 #later-icon");
+        laterTempEl = $("#day-4 #later-temp");
+        laterWindEl = $("#day-4 #later-wind");
+        laterHumidityEl = $("#day-4 #later-humidity");
+
+        laterWeather = data.list[4].weather[0].main;
+        laterDegree = (data.list[4].main.temp - 273.15) * 1.8 + 32;
+        laterDegreeConvert = (Math.round(laterDegree * 100) / 100).toFixed(2);
+        laterWind = data.list[4].wind.speed;
+        laterHumidity = data.list[4].main.humidity;
+
+        if (laterWeather == "Thunderstorm") {
+            weatherIcon = "🌩";
+        } else if (laterWeather == "Drizzle") {
+            weatherIcon = "🌧"
+        } else if (laterWeather == "Rain") {
+            weatherIcon = "⛆"
+        } else if (laterWeather == "Snow") {
+            weatherIcon = "🌨"
+        } else if (laterWeather == "Clear") {
+            weatherIcon = "🌣"
+        } else if (laterWeather == "Clouds") {
+            weatherIcon = "🌤"
+        };
+
+        laterDateEl.text(dayPlus4);
+        laterIconEl.text(weatherIcon);
+        laterTempEl.text("Temp: " + laterDegreeConvert + "°F");
+        laterWindEl.text("Wind: " + laterWind + " MPH");
+        laterHumidityEl.text("Humidity: " + laterHumidity + "%");
+
+        //day5
+
+        laterDateEl = $("#day-5 #later-date");
+        laterIconEl = $("#day-5 #later-icon");
+        laterTempEl = $("#day-5 #later-temp");
+        laterWindEl = $("#day-5 #later-wind");
+        laterHumidityEl = $("#day-5 #later-humidity");
+
+        laterWeather = data.list[5].weather[0].main;
+        laterDegree = (data.list[5].main.temp - 273.15) * 1.8 + 32;
+        laterDegreeConvert = (Math.round(laterDegree * 100) / 100).toFixed(2);
+        laterWind = data.list[5].wind.speed;
+        laterHumidity = data.list[5].main.humidity;
+
+        if (laterWeather == "Thunderstorm") {
+            weatherIcon = "🌩";
+        } else if (laterWeather == "Drizzle") {
+            weatherIcon = "🌧"
+        } else if (laterWeather == "Rain") {
+            weatherIcon = "⛆"
+        } else if (laterWeather == "Snow") {
+            weatherIcon = "🌨"
+        } else if (laterWeather == "Clear") {
+            weatherIcon = "🌣"
+        } else if (laterWeather == "Clouds") {
+            weatherIcon = "🌤"
+        };
+
+        laterDateEl.text(dayPlus5);
+        laterIconEl.text(weatherIcon);
+        laterTempEl.text("Temp: " + laterDegreeConvert + "°F");
+        laterWindEl.text("Wind: " + laterWind + " MPH");
+        laterHumidityEl.text("Humidity: " + laterHumidity + "%");
+
     });
 });
