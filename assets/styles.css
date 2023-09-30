@@ -1,3 +1,10 @@
 header {
     background-image: linear-gradient(90deg, cornflowerblue, darkblue);
 }
+
+.card {
+    background-color: darkslateblue;
+    color: white;
+    display: none;
+    padding: 15px;
+}
