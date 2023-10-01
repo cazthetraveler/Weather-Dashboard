@@ -485,3 +485,23 @@ $(document).on("click", ".search-history-button", function() {
         laterHumidityEl.text("Humidity: " + laterHumidity + "%");
     });
 });
+
+//save local storage
+
+function renderButton() {
+    var savedCitiesString = localStorage.getItem("cities");
+
+    if (savedCitiesString) {
+        savedCities = JSON.parse(savedCitiesString);
+
+        for (var i = 0; i < savedCities.length; i++) {
+            var historyButton = $("<button>");
+            historyButton.text(savedCities[i]);
+            historyButton.attr("data-city", savedCities[i]);
+            historyButton.attr("class", "btn btn-secondary w-100 my-3 text-white search-history-button");
+            searchHistory.prepend(historyButton);
+        };
+    };
+};
+
+renderButton(); //OMG IT WORKED????
