@@ -12,4 +12,9 @@ The site is also responsive for mobile and desktop view.
 
 ## Screenshot
 
+<img src="./assets/images/mobile-screenshot.jpg" height="500px" width="auto" alt="mobile screenshot">
+<img src="./assets/images/desktop-screenshot.png" height="500px" width="auto" alt="desktop screenshot">
+
 ## Deployed Link
+
+https://cazthetraveler.github.io/Weather-Dashboard/
